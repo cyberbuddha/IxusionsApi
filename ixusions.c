@@ -126,7 +126,7 @@ void ixusions_set_precedence(IxusionsContext context, IxusionsDevice device, Ixu
 IxusionsFilter ixusions_get_filter(IxusionsContext context, IxusionsDevice device)
 {
     IxusionsDeviceArray device_array = (IxusionsDeviceArray)context;
-    InterceptionFilter filter = 0;
+    IxusionsFilter filter = 0;
     DWORD bytes_returned;
 
     if(context && device_array[device - 1].handle)
